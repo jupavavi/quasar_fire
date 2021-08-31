@@ -21,7 +21,11 @@
   },
   "keywords": [],
   "nodemonConfig": {
-    "ignore": ["test/*", "docs/*", "client/build/*"],
+    "ignore": [
+      "test/*",
+      "docs/*",
+      "client/build/*"
+    ],
     "delay": 2500
   }
 }

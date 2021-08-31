@@ -21,14 +21,19 @@ export const post = async (req, res) => {
     const { id } = params;
     const { distance, message } = body;
 
-    const satellite = {
-        ...getByName(id),
-        distance,
-        message,
-    };
-
-    req.session.satellites = req.session.satellites || {};
-    req.session.satellites[id] = satellite;
-
-    res.end();
+    try {
+        const satellite = {
+            ...getByName(id),
+            distance,
+            message,
+        };
+    
+        req.session.satellites = req.session.satellites || {};
+        req.session.satellites[id] = satellite;
+        res.end();
+    } catch(e) {
+        res.status(404).send({
+            error: e.message,
+        });
+    }
 };
