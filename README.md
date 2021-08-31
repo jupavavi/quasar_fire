@@ -25,7 +25,7 @@ Due environment limitations, this project was developed using [Codesanbox](https
 Although this was tested on a local environment, you can visit https://codesandbox.io/s/github/jupavavi/quasar_fire/tree/main to run this project without installing locally.
 
 ### Structure
-#### Slient
+#### Client
 Client folder contains an small react app. This is a bit outside the requirements. Althought I have passion for graphical rendering. On the other hand, the triangularization algorithm was polished based on a prototype developed in this [sanbox](https://codesandbox.io/s/hidden-sun-b7dvv), which later was modified as the FE for this project.
 
 Text input are expected to use "," as separator for words. This means that empty between commas is taken as a missed word.
